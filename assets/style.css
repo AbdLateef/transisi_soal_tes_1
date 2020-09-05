@@ -14,7 +14,7 @@ h4 span{
 .container {
     max-width: 992px;
     margin: 25px auto;
-    padding: 0px 16px;
+    padding: 0px 10px;
     background-color: #262a41;
     height: 90vh;
     border-radius: 20px;
@@ -39,13 +39,14 @@ h4 span{
 .col-right {
     display: flex;
     width: 50%;
-    padding: 15px 0px;
+    padding: 8px 0px;
 }
 
 .col-right-container {
     background-color: white;
     width: 100%;
     border-radius: 20px;
+    position: relative;
 }
 
 .search-container {
@@ -120,6 +121,200 @@ h4 span{
 .chosen-project {
     outline: 2px solid #5dbfc8;
     outline-offset: 5px;    
+}
+
+.project-detail{
+    padding: 30px 65px;
+}
+
+.project-detail-heading{
+    display: flex;
+    flex-direction: row;
+}
+
+.project-title{
+    float: left;
+    width: 70%;
+    height: 50px;
+}
+
+.project-title h1, .project-title h2{
+    line-height: 5px;
+}
+
+.project-title p{
+    font-size: small;
+}
+
+.project-teams{
+    position: relative;
+    margin-left: 15%;
+    height: 110px;
+}
+
+.project-team{
+    position: absolute;
+}
+
+.project-team img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.add-project-team {
+    color: rgb(192, 192, 192);
+    border: 2px solid rgb(192, 192, 192);
+    border-radius: 50%;
+    margin: auto;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    font-size: larger;
+}
+
+.project-detail-list-heading {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-detail-lists {
+    font-size: 0.9rem;
+}
+
+.project-detail-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.today {
+    width: 95%;
+}
+
+.today h4 {
+    line-height: 5px;
+}
+
+.checkbox-container{
+    width: 25px;
+    padding: 9px 3px;
+}
+
+.check-circle {
+    position: relative;
+}
+  
+.check-circle label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 19px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 19px;
+}
+  
+.check-circle label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 3px;
+    left: 4px;
+    opacity: 0;
+    position: absolute;
+    top: 6px;
+    transform: rotate(-45deg);
+    width: 9px;
+}
+  
+.check-circle input[type="checkbox"] {
+    visibility: hidden;
+}
+  
+.check-circle input[type="checkbox"]:checked + label {
+    background-color: #66b1bb;
+    border-color: #66b1bb;
+}
+  
+.check-circle input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+
+.project-detail-list .label {
+    padding: 9px 10px;
+    width: 425px;
+}
+
+.project-detail-list .status {
+    display: flex;
+    justify-content: end;
+    padding: 9px 0px;
+    width: 125px;
+}
+
+.project-detail-list .status span {
+    border-radius: 7px;
+    height: 25px;
+    padding: 0px 7px;
+    font-size: smaller;
+    line-height: 22px;
+    font-weight: bold;
+}
+
+.approved {
+    color: rgb(56, 128, 128);
+    background: #d2f2f2;
+}
+
+.inprogress {
+    color: rgb(61, 71, 128);
+    background: #99d9f4;
+
+}
+
+.inreview {
+    color: rgb(204, 72, 20);
+    background: #ffe1e6;
+}
+
+.waiting {
+    color: rgb(78, 78, 78);
+    background: #d3d3d3;
+}
+
+.bottom-right {
+    width: 100%;
+    position: absolute;
+    height: 60px;
+    bottom: 0;
+}
+
+.bottom-right .button-container {
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+}
+
+.bottom-right .button-container button {
+    display: inline-block;
+    background-color: #7b38d8;
+    border-radius: 10px;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 2px 2px 7px 3px rgba(124, 42, 143, 0.37);
+    border: none;
 }
 
 @media screen and (max-width: 992px) {
